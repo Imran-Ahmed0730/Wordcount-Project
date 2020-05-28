@@ -1,0 +1,18 @@
+<h1>Your Text:</h1>
+{{Text}}
+<h1>There are {{WordCount}} words</h1>
+
+<a href = "{% url "home" %}">Start Again</a>
+
+<h1>All Words:</h1>
+
+{% for Word, CountTotal in Dictionary %}
+
+<h3>{{ Word }} - {{ CountTotal }}</h3>
+
+
+
+{% endfor %}
+
+
+

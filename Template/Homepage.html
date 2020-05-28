@@ -1,0 +1,11 @@
+<h1> Enter Your Text for Word Count</h1>
+<form action = "{% url "counting" %}">
+    <textarea cols="40" rows="12" required name="fun"></textarea>
+<br>
+<h2>Now Click the Below Button</h2>
+    <input type="submit" value="Count"/>
+<br>
+<a href="{% url "about" %}">About</a>
+
+
+</form>
